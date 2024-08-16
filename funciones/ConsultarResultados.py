@@ -99,6 +99,6 @@ def nuwsucursal():
         else:
             print("Paciente no encontrado.")
             if input("¿Desea volver al menú de direcciones? (Sí/No): ").lower() != 'sí':
-                break  # Salir del bucle si no se desea agregar otra consulta
+                break  # Salir del bucle si no se desea agregar otra sucursal
             else:
                 continue  # Volver al inicio del bucle para ingresar otro número de identificación
