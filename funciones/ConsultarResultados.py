@@ -6,7 +6,7 @@ import ui.uiConsultas as uc
 
 def SearchData():
     criterio = input('Ingrese el Nro de Identificacion del paciente: ')
-    data = gf.centroClinico.get('data').get(criterio)
+    data = gf.sucursal.get('data').get(criterio)
     return data
 
 def nuwsucursal():
@@ -89,8 +89,8 @@ def nuwsucursal():
                 })
 
                 # Actualizar el archivo sucursaless.json con los nuevos datos
-                with open(pacientes_file, "w") as file:
-                    json.dump(gf.centroClinico, file, indent=4)
+                with open(sucursales, "w") as file:
+                    json.dump(gf.sucursal, file, indent=4)
 
                 if input("¿Desea agregar otra consulta? (Sí/No): ").lower() != 'sí':
                     break  # Salir del bucle si no se desea agregar otra consulta
