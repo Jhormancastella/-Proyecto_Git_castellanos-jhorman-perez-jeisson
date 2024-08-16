@@ -4,17 +4,17 @@ import funciones.especialistas as fsp
 import funciones.iraconsulta as fic
 import main
 
-def MenuEspecialista(op: int):
+def MenuRegistro(op: int):
     title = """
     ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
    ⚕️  🧑‍⚕️  MODULO ADMIN De Registro de sucursal  👩‍⚕️  ⚕️
     ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
     """
-    menuEspecialistaOp = '1. Agregar\n2. Salir'
+    MenuRegistroOp = '1. Agregar\n2. Salir'
     gf.borrar_pantalla()
     if op != 5:  # Reemplazado 4 con 5 para salir en la opción 5
         print(title)
-        print(menuEspecialistaOp)
+        print(MenuRegistroOp)
         while True:
             try:
                 op = int(input(":) "))
@@ -24,7 +24,7 @@ def MenuEspecialista(op: int):
             except ValueError as e:
                 print("Error:", e)
                 gf.pausar_pantalla()
-                MenuEspecialista(0)
+                MenuRegistro(0)
 
         match op:
             case 1:
@@ -35,7 +35,7 @@ def MenuEspecialista(op: int):
                 else:
                     print("Especialista agregado exitosamente")
                 gf.pausar_pantalla()
-                MenuEspecialista(0)
+                MenuRegistro(0)
 
             case 2:
                 try:
@@ -45,7 +45,7 @@ def MenuEspecialista(op: int):
                 else:
                     print("Datos del especialista editados exitosamente")
                 gf.pausar_pantalla()
-                MenuEspecialista(0)
+                MenuRegistro(0)
 
             case 3:
                 try:
@@ -53,7 +53,7 @@ def MenuEspecialista(op: int):
                 except Exception as e:
                     print("Error al ir a consulta:", e)
                 gf.pausar_pantalla()
-                MenuEspecialista(0)
+                MenuRegistro(0)
 
             case 4:
                 try:
@@ -63,7 +63,7 @@ def MenuEspecialista(op: int):
                 else:
                     print("Especialista eliminado exitosamente")
                 gf.pausar_pantalla()
-                MenuEspecialista(0)
+                MenuRegistro(0)
 
             case 5:
                 main.mainMenu(0)
@@ -71,4 +71,4 @@ def MenuEspecialista(op: int):
             case _:
                 print("La opción ingresada no está disponible en las opciones")
                 gf.pausar_pantalla()
-                MenuEspecialista(0)
+                MenuRegistro(0)
