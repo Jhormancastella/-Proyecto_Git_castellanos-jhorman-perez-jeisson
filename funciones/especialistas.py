@@ -17,31 +17,12 @@ def NewEspecialista():
     nombreEspecialista = input("Ingrese telefono : ")
     correoElectronico = input("Ingrese Correo Electrónico: ")
     telefono = input("Ingrese numero  del celular : ")
-    print("Seleccione Especialización:")
-    print("1. Pediatría")
-    print("2. Ginecología")
-    print("3. Dermatología")
-    print("4. Endocrinología")
-    print("5. Optometría")
-    especializacion = input("Ingrese el número correspondiente a la especialización: ")
-    especializaciones = ["Pediatría", "Ginecología", "Dermatología", "Endocrinología", "Optometría"]
-    especialidad = especializaciones[int(especializacion) - 1]
-    print("Seleccione Horario:")
-    print("1. Mañana")
-    print("2. Tarde")
-    horario = input("Ingrese el número correspondiente al horario: ")
-    horarios = ["Mañana", "Tarde"]
-    jornada = horarios[int(horario) - 1]
-
     especialista = {
         'identificacion': identificacion,
         'codEspecialista': codEspecialista,
         'nombreEspecialista': nombreEspecialista,
         'correoElectronico': correoElectronico,
         'telefono': telefono,
-        'especialidad': especialidad,
-        'jornada': jornada,
-        'consultas': [],
     }
     cfp.AddData('data', identificacion, especialista)
     gf.centroClinico.get('data').update({identificacion: especialista})
