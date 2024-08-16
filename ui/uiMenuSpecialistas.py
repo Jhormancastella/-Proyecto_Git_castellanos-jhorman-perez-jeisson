@@ -43,7 +43,7 @@ def MenuEspecialista(op: int):
                 except Exception as e:
                     print("Error al editar sucursal:", e)
                 else:
-                    print("Datos del especialista editados exitosamente")
+                    print("Datos de sucursal editados exitosamente")
                 gf.pausar_pantalla()
                 MenuEspecialista(0)
 
@@ -61,7 +61,7 @@ def MenuEspecialista(op: int):
                 except Exception as e:
                     print("Error al eliminar direciones:", e)
                 else:
-                    print("Especialista eliminado exitosamente")
+                    print("sucursal eliminado exitosamente")
                 gf.pausar_pantalla()
                 MenuEspecialista(0)
 
