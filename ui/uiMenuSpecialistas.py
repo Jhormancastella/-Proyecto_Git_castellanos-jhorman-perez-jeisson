@@ -7,7 +7,7 @@ import main
 def MenuEspecialista(op: int):
     title = """
     ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
-   ⚕️  🧑‍⚕️  MODULO ADMIN ESPECIALISTAS CENTRO CLINICO  👩‍⚕️  ⚕️
+   ⚕️  🧑‍⚕️  MODULO ADMIN De Registro de sucursal  👩‍⚕️  ⚕️
     ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
     """
     menuEspecialistaOp = '1. Agregar\n2. Editar\n3. ir a consulta\n4. eliminar\n5. Salir'
