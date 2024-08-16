@@ -85,7 +85,7 @@ def nuwsucursal():
                     'motivo': motivo,
                     'antecedentes': direccion,
                     'alergias': telefono,
-                    'consultorio': consultorio
+                    'direccion': direccion
                 })
 
                 # Actualizar el archivo sucursaless.json con los nuevos datos
