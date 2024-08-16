@@ -1,3 +1,6 @@
+import json
+from datetime import date
+
 import modules.corefiles as cf
 import modules.corefilesP as cfp
 import funciones.globales as fg
@@ -8,11 +11,11 @@ import ui.uiConsultas as uiC
 def mainMenu(op):
     fg.borrar_pantalla()
     title = """
-    🟦⬜🟦🟩⬜🟩🟦⬜🟦🟩⬜🟩🟦⬜🟦🟩⬜🟩🟦⬜🟦🟩⬜🟩
-    🟥 🏣      MODULO DEL SUCURSAL   🟥
-    🟦⬜🟦🟩⬜🟩🟦⬜🟦🟩⬜🟩🟦⬜🟦🟩⬜🟩🟦⬜🟦🟩⬜🟩
+    🟦⬜🟦🟩⬜🟩🟦⬜🟦🟩⬜🟩
+    🟥 🏣 centro de sucursal  🟥
+    🟦⬜🟦🟩⬜🟩🟦⬜🟦🟩⬜🟩
     """
-    mainMenuOp = "1. regitro de nueva sucursal\n2. editar sucursal\n3. salir"
+    mainMenuOp = "1. registros de nueva sucursal\n2. editar sucursal\n3. Salir"
     if op != 4:
         print(title)
         print(mainMenuOp)
@@ -27,18 +30,13 @@ def mainMenu(op):
                 uiSp.MenuEspecialista(0)
             elif opcion == 2:
                 uiPt.MenuPacientes(0)
-            elif opcion == 3:
-                uiC.MenuConsulta(0)
-            elif opcion == 4:
-                print("Regrese pronto ....")
-                fg.pausar_pantalla()
             else:
                 print('Opcion ingresada no pertenece al menu de opciones')
                 fg.pausar_pantalla()
                 mainMenu(0)
 
 if __name__ == '__main__':
-    cf.MY_DATABASE = 'data/pacientes.json'
+    cf.MY_DATABASE = 'data/sucursales.json'
     cfp.MY_DATABASEP = 'data/especialistas.json'
     cf.checkFile(fg.centroClinico)
     cfp.checkFile(fg.centroClinico)
