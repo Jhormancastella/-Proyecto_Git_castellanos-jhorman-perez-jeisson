@@ -9,10 +9,10 @@ def mainMenu(op):
     fg.borrar_pantalla()
     title = """
     🟦⬜🟦🟩⬜🟩🟦⬜🟦🟩⬜🟩🟦⬜🟦🟩⬜🟩🟦⬜🟦🟩⬜🟩
-    🟥 🏣🚑👨‍⚕️👩‍⚕️🏥 CENTRO CLINICO 🏣🚑👨‍⚕️👩‍⚕️🏥  🟥
+    🟥 🏣      MODULO DEL SUCURSAL   🟥
     🟦⬜🟦🟩⬜🟩🟦⬜🟦🟩⬜🟩🟦⬜🟦🟩⬜🟩🟦⬜🟦🟩⬜🟩
     """
-    mainMenuOp = "1. Gestion especialistas\n2. Gestion pacientes\n3. agendar Consulta y resultados\n4. Salir"
+    mainMenuOp = "1. regitro de nueva sucursal\n2. editar sucursal\n3. salir"
     if op != 4:
         print(title)
         print(mainMenuOp)
