@@ -6,7 +6,7 @@ import ui.uiMenuSpecialistas as uipc
 def NewEspecialista():
     title = """
     *****************************
-    * REGISTRO DE ESPECIALISTAS *
+    * REGISTRO DE SUCURSAL *
     *****************************
     """
     gf.borrar_pantalla()

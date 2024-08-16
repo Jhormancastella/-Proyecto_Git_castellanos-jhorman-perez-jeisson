@@ -6,7 +6,7 @@ import main
 def MenuPacientes(op: int):
     title = """
     🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥
-    🕛 MODULO ADMIN PACIENTES CENTRO CLINICO  🕛
+    🕛 MODULO admi de las sucursal 🕛
     🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥
     """
     menuPacienteOp = '1. Agregar\n2. Editar\n3. Eliminar\n4. Salir'
@@ -50,7 +50,7 @@ def MenuPacientes(op: int):
                 try:
                     pt.DeleteData()
                 except Exception as e:
-                    print("Error al eliminar paciente:", e)
+                    print("Error al eliminar sucursal:", e)
                 else:
                     print("Paciente eliminado exitosamente")
                 gf.pausar_pantalla()

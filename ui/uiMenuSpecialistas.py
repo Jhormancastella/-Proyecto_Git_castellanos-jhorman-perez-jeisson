@@ -6,11 +6,11 @@ import main
 
 def MenuEspecialista(op: int):
     title = """
-    ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
-   ⚕️  🧑‍⚕️  MODULO ADMIN ESPECIALISTAS CENTRO CLINICO  👩‍⚕️  ⚕️
-    ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
+    ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖
+   ⚕️  🧑  REGISTROS DE LAS SUCURSALES       👩  ⚕️
+    ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖
     """
-    menuEspecialistaOp = '1. Agregar\n2. Editar\n3. ir a consulta\n4. eliminar\n5. Salir'
+    menuEspecialistaOp = '1. Agregar\n2. Editar\n3. ir a SUCURSALES\n4. eliminar\n5. Salir'
     gf.borrar_pantalla()
     if op != 5:  # Reemplazado 4 con 5 para salir en la opción 5
         print(title)
@@ -41,7 +41,7 @@ def MenuEspecialista(op: int):
                 try:
                     fsp.ModifyData()
                 except Exception as e:
-                    print("Error al editar especialista:", e)
+                    print("Error al editar sucursal:", e)
                 else:
                     print("Datos del especialista editados exitosamente")
                 gf.pausar_pantalla()
@@ -59,7 +59,7 @@ def MenuEspecialista(op: int):
                 try:
                     fsp.DeleteData()
                 except Exception as e:
-                    print("Error al eliminar especialista:", e)
+                    print("Error al eliminar direciones:", e)
                 else:
                     print("Especialista eliminado exitosamente")
                 gf.pausar_pantalla()

@@ -6,9 +6,9 @@ import main
 
 def MenuConsulta(op: int):
     title = """
-    *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣  
-    *️⃣ *️⃣    MODULO ADMIN CONSULTA Y RESULTADOS CENTRO CLINICO  *️⃣ *️⃣
-    *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ 
+    *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ 
+    *️⃣ *️⃣    modulo de las sucursalesa  *️⃣ *️⃣
+    *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ 
     """
     MenuConsultaOp = '1. Agendar Cita\n2. Ver Resultados\n3. Salir'
     gf.borrar_pantalla()

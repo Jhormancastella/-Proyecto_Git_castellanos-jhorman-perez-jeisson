@@ -8,7 +8,7 @@ from datetime import datetime
 def NewPaciente():
     title = """
     ***************************
-    * REGISTRO DE PACIENTES *
+    * REGISTRO DE SUCURSALES *
     ***************************
     """
     gf.borrar_pantalla()
