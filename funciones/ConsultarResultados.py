@@ -18,12 +18,12 @@ def nuwsucursal():
     gf.borrar_pantalla()
     print(title)
 
-    # Ruta al archivo pacientes.json dentro de la carpeta "data"
+    # Ruta al archivo sucursal.json dentro de la carpeta "data"
     modules_file = os.path.join("data", "sucursales.json")
 
-    # Verificar si el archivo pacientes.json existe
+    # Verificar si el archivo sucursal.json existe
     if not os.path.exists(modules_file):
-        print("El archivo pacientes.json no se encuentra en la carpeta 'data'. Por favor, asegúrese de que el archivo esté presente.")
+        print("El archivo sucursal.json no se encuentra en la carpeta 'data'. Por favor, asegúrese de que el archivo esté presente.")
         return
 
     while True:
@@ -81,7 +81,7 @@ def nuwsucursal():
                 sucursales['direcciones'].append({
                     'fecha_cita': fecha_cita_str,
                     'horario_cita': horario_str,
-                    'especialista': sucursales,
+                    'sucuesales': sucursales,
                     'motivo': motivo,
                     'antecedentes': direccion,
                     'alergias': telefono,
