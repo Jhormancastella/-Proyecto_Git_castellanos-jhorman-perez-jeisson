@@ -6,17 +6,17 @@ import ui.uiMenuSpecialistas as uipc
 def NewEspecialista():
     title = """
     *****************************
-    * REGISTRO DE ESPECIALISTAS *
+    * REGISTRO DE sucursales *
     *****************************
     """
     gf.borrar_pantalla()
     print(title)
     
-    identificacion = input("Ingrese el Nro de Identificacion: ")
-    codEspecialista = input("Ingrese Codigo del especialista: ")
-    nombreEspecialista = input("Ingrese Nombre del especialista: ")
-    correoElectronico = input("Ingrese Correo Electrónico del especialista: ")
-    telefono = input("Ingrese Teléfono del especialista: ")
+    identificacion = input("Ingrese el Nombre de la sucurla: ")
+    codEspecialista = input("Ingrese Dirrecion completa: ")
+    nombreEspecialista = input("Ingrese telefono : ")
+    correoElectronico = input("Ingrese Correo Electrónico: ")
+    telefono = input("Ingrese numero  del celular : ")
     print("Seleccione Especialización:")
     print("1. Pediatría")
     print("2. Ginecología")

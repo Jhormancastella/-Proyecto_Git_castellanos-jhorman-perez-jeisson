@@ -10,7 +10,7 @@ def MenuEspecialista(op: int):
    ⚕️  🧑‍⚕️  MODULO ADMIN De Registro de sucursal  👩‍⚕️  ⚕️
     ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
     """
-    menuEspecialistaOp = '1. Agregar\n2. Editar\n3. ir a consulta\n4. eliminar\n5. Salir'
+    menuEspecialistaOp = '1. Agregar\n2. Salir'
     gf.borrar_pantalla()
     if op != 5:  # Reemplazado 4 con 5 para salir en la opción 5
         print(title)
