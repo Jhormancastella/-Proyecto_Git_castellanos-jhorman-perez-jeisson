@@ -6,19 +6,11 @@ import main
 
 def MenuRegistro(op: int):
     title = """
-<<<<<<< HEAD
-    ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖
-   ⚕️  🧑  REGISTROS DE LAS SUCURSALES       👩  ⚕️
-    ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖
-    """
-    menuEspecialistaOp = '1. Agregar\n2. Editar\n3. ir a SUCURSALES\n4. eliminar\n5. Salir'
-=======
     ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
    ⚕️  🧑‍⚕️  MODULO ADMIN De Registro de sucursal  👩‍⚕️  ⚕️
     ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
     """
     MenuRegistroOp = '1. Agregar\n2. Salir'
->>>>>>> main
     gf.borrar_pantalla()
     if op != 5:  # Reemplazado 4 con 5 para salir en la opción 5
         print(title)
@@ -45,37 +37,6 @@ def MenuRegistro(op: int):
                 gf.pausar_pantalla()
                 MenuRegistro(0)
             case 2:
-<<<<<<< HEAD
-                try:
-                    fsp.ModifyData()
-                except Exception as e:
-                    print("Error al editar sucursal:", e)
-                else:
-                    print("Datos de sucursal editados exitosamente")
-                gf.pausar_pantalla()
-                MenuEspecialista(0)
-
-            case 3:
-                try:
-                    fic.iraConsulta()
-                except Exception as e:
-                    print("Error al ir a consulta:", e)
-                gf.pausar_pantalla()
-                MenuEspecialista(0)
-
-            case 4:
-                try:
-                    fsp.DeleteData()
-                except Exception as e:
-                    print("Error al eliminar direciones:", e)
-                else:
-                    print("sucursal eliminado exitosamente")
-                gf.pausar_pantalla()
-                MenuEspecialista(0)
-
-            case 5:
-=======
->>>>>>> main
                 main.mainMenu(0)
 
             case _:
