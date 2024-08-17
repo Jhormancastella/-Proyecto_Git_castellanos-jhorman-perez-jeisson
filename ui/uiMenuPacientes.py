@@ -5,9 +5,9 @@ import main
 
 def MenuPacientes(op: int):
     title = """
-    🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥
+    🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤
     🕛 MODULO ADMIN PACIENTES CENTRO CLINICO  🕛
-    🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥
+    🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤
     """
     menuPacienteOp = '1. Agregar\n2. Editar\n3. Eliminar\n4. Salir'
     gf.borrar_pantalla()
