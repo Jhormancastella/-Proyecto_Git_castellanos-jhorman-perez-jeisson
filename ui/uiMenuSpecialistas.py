@@ -36,36 +36,7 @@ def MenuRegistro(op: int):
                     print("Especialista agregado exitosamente")
                 gf.pausar_pantalla()
                 MenuRegistro(0)
-
             case 2:
-                try:
-                    fsp.ModifyData()
-                except Exception as e:
-                    print("Error al editar especialista:", e)
-                else:
-                    print("Datos del especialista editados exitosamente")
-                gf.pausar_pantalla()
-                MenuRegistro(0)
-
-            case 3:
-                try:
-                    fic.iraConsulta()
-                except Exception as e:
-                    print("Error al ir a consulta:", e)
-                gf.pausar_pantalla()
-                MenuRegistro(0)
-
-            case 4:
-                try:
-                    fsp.DeleteData()
-                except Exception as e:
-                    print("Error al eliminar especialista:", e)
-                else:
-                    print("Especialista eliminado exitosamente")
-                gf.pausar_pantalla()
-                MenuRegistro(0)
-
-            case 5:
                 main.mainMenu(0)
 
             case _:
