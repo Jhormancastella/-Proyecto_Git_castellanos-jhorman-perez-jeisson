@@ -4,17 +4,25 @@ import funciones.especialistas as fsp
 import funciones.iraconsulta as fic
 import main
 
-def MenuEspecialista(op: int):
+def MenuRegistro(op: int):
     title = """
+<<<<<<< HEAD
     ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖
    ⚕️  🧑  REGISTROS DE LAS SUCURSALES       👩  ⚕️
     ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖
     """
     menuEspecialistaOp = '1. Agregar\n2. Editar\n3. ir a SUCURSALES\n4. eliminar\n5. Salir'
+=======
+    ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
+   ⚕️  🧑‍⚕️  MODULO ADMIN De Registro de sucursal  👩‍⚕️  ⚕️
+    ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
+    """
+    MenuRegistroOp = '1. Agregar\n2. Salir'
+>>>>>>> main
     gf.borrar_pantalla()
     if op != 5:  # Reemplazado 4 con 5 para salir en la opción 5
         print(title)
-        print(menuEspecialistaOp)
+        print(MenuRegistroOp)
         while True:
             try:
                 op = int(input(":) "))
@@ -24,7 +32,7 @@ def MenuEspecialista(op: int):
             except ValueError as e:
                 print("Error:", e)
                 gf.pausar_pantalla()
-                MenuEspecialista(0)
+                MenuRegistro(0)
 
         match op:
             case 1:
@@ -35,9 +43,9 @@ def MenuEspecialista(op: int):
                 else:
                     print("Especialista agregado exitosamente")
                 gf.pausar_pantalla()
-                MenuEspecialista(0)
-
+                MenuRegistro(0)
             case 2:
+<<<<<<< HEAD
                 try:
                     fsp.ModifyData()
                 except Exception as e:
@@ -66,9 +74,11 @@ def MenuEspecialista(op: int):
                 MenuEspecialista(0)
 
             case 5:
+=======
+>>>>>>> main
                 main.mainMenu(0)
 
             case _:
                 print("La opción ingresada no está disponible en las opciones")
                 gf.pausar_pantalla()
-                MenuEspecialista(0)
+                MenuRegistro(0)
