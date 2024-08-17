@@ -6,9 +6,9 @@ import main
 
 def MenuRegistro(op: int):
     title = """
-    ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
+    ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️
    ⚕️  🧑‍⚕️  MODULO ADMIN De Registro de sucursal  👩‍⚕️  ⚕️
-    ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
+    ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️
     """
     MenuRegistroOp = '1. Agregar\n2. Salir'
     gf.borrar_pantalla()
