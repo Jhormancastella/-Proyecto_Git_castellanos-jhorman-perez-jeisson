@@ -27,7 +27,7 @@ def mainMenu(op):
             mainMenu(0)
         else:
             if opcion == 1:
-                uiSp.MenuEspecialista(0)
+                uiSp.MenuRegistro(0)
             elif opcion == 2:
                 uiPt.MenuPacientes(0)
             else:
