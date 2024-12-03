@@ -1,38 +1,49 @@
-# proyecto de python 
+# Sistema de Gestión de Operaciones y Ventas
 
-## Propósito
-Este proyecto tiene como objetivo desarrollar un programa en python el cual permite el 
-el seguimiento de las operaciones, inventarios y ventas en cada sucursal, 
-permitiendo una mejor coordinación y optimización de recursos..
+## 📝 Propósito
+Programa en Python para seguimiento de operaciones, inventarios y ventas en sucursales. Funcionalidades:
+- Coordinación eficiente de recursos
+- Seguimiento detallado de inventarios
+- Análisis de rendimiento de ventas
+- Optimización de decisiones empresariales
 
-## clonar repositorio
+## 🚀 Requisitos Previos
+- Python 3.8+
+- Dependencias: (especificar)
+
+## 🔧 Instalación
+
+### Clonar Repositorio
 ```bash
-https://github.com/Jhormancastella/-Proyecto_Git_castellanos-jhorman-perez-jeisson.git
+git clone https://github.com/Jhormancastella/-Proyecto_Git_castellanos-jhorman-perez-jeisson.git
+cd proyecto
 ```
 
-## codigo en base a 
-- principal - `main.py`: Contiene la estructura principal de la progama en python.
-- registros `json.py`.
+### Configuración
+```bash
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
 
+## 📂 Estructura del Proyecto
+- `main.py`: Lógica central del programa
+- `json.py`: Gestión de registros y datos
+- `docs/`: Documentación
+- `tests/`: Pruebas unitarias
 
-Hecho por (jhorman jesus castellanos morales y jeisson stiven perez gonzalez)
+## 🤝 Contribuidores
+- Jhorman Jesús Castellanos Morales
+- Jeisson Stiven Pérez González
 
-> [!NOTE]
-> puede que falle
+## ⚠️ Consideraciones
+- Verificar permisos antes de ejecutar
+- Realizar copias de seguridad
 
-> [!TIP]
-> 
+## 🐛 Problemas Conocidos
+- Latencia en procesamiento de grandes volúmenes
+- Requiere optimización de concurrencia
 
-> [!IMPORTANT]  
-> 
-
-> [!WARNING]  
-> 
-
-> [!CAUTION]
-> 
-
-##creacion de ramas
-
--main--
--Devjeisson--
+## 📌 Ramas
+- `main`: Versión estable
+- `dev-jeisson`: Rama de desarrollo
